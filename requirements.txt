@@ -1,0 +1,11 @@
+# Use a PyTorch / torchvision / CUDA combination matching your Mamba environment.
+torch>=2.6
+torchvision
+numpy
+Pillow
+tqdm
+scikit-image
+matplotlib
+opencv-python
+mamba-ssm
+causal-conv1d
