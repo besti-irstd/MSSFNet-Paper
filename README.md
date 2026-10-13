@@ -25,7 +25,6 @@ MSSFNet-Paper/
 │   ├── metric.py                 # 评价指标
 │   └── tools.py
 └── tools/
-    └── verify_refactor.py        # 与原始版本进行一致性比较
 ```
 
 训练时会在仓库内创建 `weight/MSSFNet-时间戳/`；预测结果默认保存到 `outputs/predictions/`。这些运行输出未包含在当前提交中。
