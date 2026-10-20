@@ -33,7 +33,7 @@ MSSFNet-Paper/
 # 测试
 
 ```bash
-python main.py --mode test --dataset-dir "./data/IRSTD-1k" --weight-path "./pretrained/IRSTD-1K/weight.pkl" --base-size 256 --deep-supervision 0
+python main.py --mode test --dataset-dir "./data/IRSTD-1k" --weight-path "./weight/weight.pkl" --base-size 256 --deep-supervision 0
 ```
 
 测试入口输出 mIoU、Pd 和 Fa，其中 Fa 按原代码乘以 `1,000,000` 后显示。数据集名称不在代码中硬编码为可选项，其它数据集只要满足读取器布局即可传入；历史权重加载验证覆盖 IRSTD-1K、NUAA-SIRST、NUDT-SIRST。
@@ -41,7 +41,7 @@ python main.py --mode test --dataset-dir "./data/IRSTD-1k" --weight-path "./pret
 # 训练
 
 ```bash
-python main.py --mode train --dataset-dir "./data/IRSTD-1k" --batch-size 4 --epochs 800 --lr 0.05 --base-size 256 --crop-size 256 --deep-supervision 0
+python main.py --mode train --dataset-dir "./data/IRSTD-1k" --batch-size 4 --epochs 1600 --lr 0.05 --base-size 256 --crop-size 256 --deep-supervision 0
 ```
 
 
